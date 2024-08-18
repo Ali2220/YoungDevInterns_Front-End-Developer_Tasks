@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Butcherman&family=Inconsolata:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-b from-purple-900 to-black text-white">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-purple-900 to-purple-900 text-white">
+        <nav class="bg-gradient-to-r from-purple-900 to-black flex justify-between items-center h-16 p-4">
+            <div class="w-20 h-auto">
+                <img class="m-2 rounded-full shadow-lg" src="assets/logo.jpg" alt="Logo">
+            </div>
+            <!-- Hamburger Menu -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Menu Items -->
+            <ul id="menu" class="hidden md:flex gap-8 font-bold text-lg">
+                <li class="hover:text-pink-400 cursor-pointer">Home</li>
+                <li class="hover:text-pink-400 cursor-pointer">About</li>
+                <li class="hover:text-pink-400 cursor-pointer">Contact</li>
+                <li class="hover:text-pink-400 cursor-pointer">Review</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="flex flex-col md:flex-row justify-between items-center mt-16 mx-10">
+        <div class="md:order-1 p-5">
+            <h1 class="text-5xl md:text-4xl sm:text-3xl max-w-2xl leading-normal font-bold">
+                Design Your Logo In The Best Way ..
+            </h1>
+            <p class="text-md sm:text-sm max-w-3xl leading-normal font-semibold mt-4">
+                A logo is the visual heartbeat of a brand, encapsulating its essence in a memorable design ...
+            </p>
+            <button class="mt-8 px-6 py-2 bg-purple-700 hover:bg-purple-800 text-white font-semibold rounded-full shadow-lg transition duration-300">
+                Get Started
+            </button>
+        </div>
+        <div class="md:order-2 mt-8 md:mt-0">
+            <img src="assets/logo.jpg" alt="Logo Design" class="rounded-lg shadow-3xl max-w-full">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-purple-900 to-black text-center text-lg font-semibold p-4 mt-16">
+        <p>Copyright © 2022 | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        });
+    </script>
+</body>
+
+</html>
