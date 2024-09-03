@@ -1,0 +1,87 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  background: linear-gradient(to right, #000000, #6a0dad);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.form-container {
+  background-color: white;
+  background: linear-gradient(to right, skyblue, slateblue);
+  padding: 5%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 7px;
+  font-weight: 600;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 104%;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  background: linear-gradient(to right, rgb(69, 47, 215), rgb(43, 160, 206));
+}
+
+button:hover {
+  background: linear-gradient(to right, slateblue, purple);
+}
+
+small {
+  color: rgb(192, 31, 31);
+  font-weight: 600;
+  visibility: hidden;
+}
+
+.pass {
+    position: relative;
+    
+  }
+  
+  #togglePassword {
+    position: absolute;
+    right: 1px; 
+    top: 55.5%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px; 
+    color: #666; 
+  }
+  
+  #togglePassword:hover {
+    color: #000; 
+  }
+  
+ 
+  
